@@ -34,21 +34,21 @@ class Movie {
     $spiderman2 = new Movie(127);
 
 
-    //The Incredible Hulk 
+    //The Incredible Hulk -> aggiungo i dati
     $theIncredibleHulk->title = 'The Incredible Hulk';
 
     $theIncredibleHulk->genre = 'Azione/Sci-fi';
 
     $theIncredibleHulk->year = 2008;
 
-    //Avengers Endgame
+    //Avengers Endgame -> aggiungo i dati
     $avengersEndgame->title = 'Avengers Endgame';
 
     $avengersEndgame->genre = 'Azione/Sci-fi';
 
     $avengersEndgame->year = 2019;
 
-    //spider-man 2
+    //spider-man 2 -> aggiungo i dati
     $spiderman2->title = 'spider-man 2';
 
     $spiderman2->genre = 'Azione/Avventura';
@@ -63,6 +63,7 @@ class Movie {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
     <title>Films Card</title>
 </head>
