@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 15%;
+}
+
+.movie-card {
+    border: 2px solid blue;
+    border-radius: 20px;
+    height: 200px;
+    padding: 20px 10px;
+    background-color: rgb(22, 113, 143);
+    color: white;
+}
+
+.movie-card p {
+    margin: 10px 0;
+}
