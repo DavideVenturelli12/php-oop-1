@@ -14,12 +14,12 @@ class Movie {
         }
         
         // creo una funzione che calcola quanto tempo fa è uscito il film
-        public function howIsOld(){
+        public function movieAge(){
             
-            // calcolo la data di oggi sottraendo l'anno di uscita del film
-            $yearsOld = date("Y") - $this->year;
+            // calcolo la data del film sottraendo l'anno di uscita del film alla data di oggi
+            $filmAge = date("Y") - $this->year;
 
-            return $yearsOld;
+            return $filmAge;
         }
 
     }
@@ -75,7 +75,7 @@ class Movie {
                 echo('<p> Title: ' . $theIncredibleHulk->title . '</p>');
                 echo('<p> Genre: ' . $theIncredibleHulk->genre . '</p>');
                 echo('<p> Durata: ' . $theIncredibleHulk->duration . '</p>');
-                echo('<p>' . $theIncredibleHulk->title . ' came out ' . $theIncredibleHulk->howIsOld() . ' years ago</p>');
+                echo('<p>' . $theIncredibleHulk->title . ' came out ' . $theIncredibleHulk->movieAge() . ' years ago</p>');
             ?>
         </div>
         <div class="movie-card">
@@ -83,7 +83,7 @@ class Movie {
                 echo('<p> Title: ' . $avengersEndgame->title . '</p>');
                 echo('<p> Genre: ' . $avengersEndgame->genre . '</p>');
                 echo('<p> Duration: ' . $avengersEndgame->duration . '</p>');
-                echo('<p>' . $avengersEndgame->title . ' came out ' . $avengersEndgame->howIsOld() . ' years ago</p>');
+                echo('<p>' . $avengersEndgame->title . ' came out ' . $avengersEndgame->movieAge() . ' years ago</p>');
             ?>
         </div>
         <div class="movie-card">
@@ -91,7 +91,7 @@ class Movie {
                 echo('<p> Title: ' . $spiderman2->title . '</p>');
                 echo('<p> Genre: ' . $spiderman2->genre . '</p>');
                 echo('<p> Durata: ' . $spiderman2->duration . '</p>');
-                echo('<p>' . $spiderman2->title . ' came out ' . $spiderman2->howIsOld() . ' years ago</p>');
+                echo('<p>' . $spiderman2->title . ' came out ' . $spiderman2->movieAge() . ' years ago</p>');
             ?>
         </div>       
     </div>   
